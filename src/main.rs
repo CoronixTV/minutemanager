@@ -3,8 +3,8 @@ use bluez_async::BluetoothSession;
 use std::{time::Duration, collections::HashMap};
 use tokio::time;
 const pswd: &str = "123";
-const url: &str = "minutebackend.hopto.org:1312";
-const SCAN_DURATION: Duration = Duration::from_secs(10);
+const url: &str = "minutebackend.hopto.org:1312/customers";
+const SCAN_DURATION: Duration = Duration::from_secs(30);
 #[tokio::main]
 async fn main() -> Result<(), eyre::Report> {
     let mut map = HashMap::new();
